@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giphy-Website</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="#" />
+  </head>
+  <body>
+    <div
+      class="d-grid gap-2 container-fluid p-3 mb-2 bg-black text-white bg-gradient"
+    >
+      <h2 class="text-center mt-4 mb-4">Search for GIFS!</h2>
+      <form class="justify-content-center mb4 form-inline d-flex">
+        <input
+          type="text"
+          id="search"
+          placeholder="Enter GIF Name"
+          class="form-control-lg mr-3"
+        />
+        <div>
+          <button type="submit" class="btn btn-dark btn-out btn-lg">
+            Search
+          </button>
+          <button type="reset" id="clear" class="btn btn-danger btn-lg">
+            Clear Gifs & Field
+          </button>
+          <span>
+            <a href="https://github.com/edray28/Giphy-website" target="_blank"
+              ><img
+                src="https://icons.iconarchive.com/icons/papirus-team/papirus-apps/256/github-icon.png"
+                style="width: 55px" /></a
+          ></span>
+        </div>
+      </form>
+      <div id="gifs" class="row align-items-center"></div>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="app.js"></script>
+</html>
